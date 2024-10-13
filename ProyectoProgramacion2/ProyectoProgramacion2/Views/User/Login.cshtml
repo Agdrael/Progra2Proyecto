@@ -1,33 +1,49 @@
-﻿@model UserModel // Importando un objeto de UserModel.cs
+﻿@model ProyectoProgramacion2.Models.User.Login;
 
 @{
     ViewData["Title"] = "Login";
 }
+<div class="row mt-5 justify-content-center rounded-4">
+    <div class="col-sm-5">
+        <div class="card bg-black text-white">
+            <div class="card-header">
+                Iniciar Sesion
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div asp-validation-summary="All" class="alert-danger rounded"></div>
+                    <div class="form-group">
+                        <label asp-for="UserEmail">Correo</label>
+                        <input asp-for="UserEmail" class="form-control" />
+                        <span asp-validation-for="UserEmail" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="UserPassword">Contraseña</label>
+                        <input asp-for="UserPassword" class="form-control" />
+                        <span asp-validation-for="UserPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label asp-for="RememberMe">
+                                <input asp-for="RememberMe" />
+                                Recordar credenciales
+                            </label>
+                        </div>
+                    </div>
 
-<h1>User Login</h1>
-<div class="row">
-    <div class="col-md-12">
-        <form method="post">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="p-2 col">
+                                <button type="submit" class="btn btn-success">Iniciar Sesion</button>
+                            </div>
+                            <div class="p-2 col">
+                                <a class="btn btn-secondary" asp-controller="Users" asp-action="Register">Registrarse</a>
+                            </div>
+                        </div>
+                        <a class="text-decoration-none text-white" href="#">¿Olvidastes tu contraseña?</a>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="Password"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <div class="checkbox">
-                    <label asp-for="Nombre">
-                        <input asp-for="Nombre" />
-                        @Html.DisplayNameFor(m => m.Nombre)
-                    </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+        </div>
     </div>
 </div>

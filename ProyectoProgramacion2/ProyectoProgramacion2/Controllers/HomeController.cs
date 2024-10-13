@@ -1,6 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ProyectoProgramacion2.Models;
-using System.Diagnostics;
 
 namespace ProyectoProgramacion2.Controllers
 {
@@ -13,20 +12,8 @@ namespace ProyectoProgramacion2.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        public IActionResult Index() => View();
+        [Authorize]
+        public IActionResult Privacy() => View();
     }
 }

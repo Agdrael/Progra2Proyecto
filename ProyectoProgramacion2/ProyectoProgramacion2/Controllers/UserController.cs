@@ -1,41 +1,84 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using ProyectoProgramacion2.Models;
-using System.Reflection;
+using ProyectoProgramacion2.Models.User;
 
 namespace ProyectoProgramacion2.Controllers
 {
     public class UserController : Controller
     {
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<IdentityUser> _userManager;
+
+        public UserController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        {
+            _signInManager = signInManager;
+            _userManager = userManager;
+        }
+
+        [HttpGet]
+        public IActionResult Register() => View();
+
         [HttpPost]
-        [AllowAnonymous]
-        public async Task<IActionResult> Login(UserModel user)
+        public async Task<IActionResult> Register(Register model)
         {
             if (ModelState.IsValid)
             {
-                var result = await signInManager.PasswordSignInAsync(user.Email, user.Password, user.Nombre, lockoutOnFailure: false);
+                var user = new IdentityUser
+                {
+                    UserName = model.UserEmail,
+                    Email = model.UserEmail
+                };
+
+                var result = await _userManager.CreateAsync(user, model.UserPassword!);
+
                 if (result.Succeeded)
                 {
-                    // Handle successful login
-                    return RedirectToAction(nameof(HomeController.Index), "Home");
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("Index", "home");
                 }
-                if (result.RequiresTwoFactor)
+
+                foreach (var error in result.Errors)
                 {
-                    // Handle two-factor authentication case
+                    ModelState.AddModelError(string.Empty, error.Description);
+
                 }
-                if (result.IsLockedOut)
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Login() => View();
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(Login model)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(model.UserEmail!,
+                          model.UserPassword!, model.RememberMe, lockoutOnFailure: false);
+
+                if (result.Succeeded)
                 {
-                    // Handle lockout scenario
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
-                    // Handle failure
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError(string.Empty, "Credenciales incorrectas!!");
                     return View(model);
                 }
             }
-            return View();
+
+            return View(model);
         }
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }
