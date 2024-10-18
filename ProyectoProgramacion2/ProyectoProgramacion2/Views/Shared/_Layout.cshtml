@@ -24,13 +24,11 @@
 
                 <!-- Usuario autenticado -->
                 @if (SignInManager.IsSignedIn(User))
-
                 {
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 @User?.Identity?.Name
-                                <i class="bi bi-person-circle"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" asp-controller="" asp-action="">Cuenta</a></li>
@@ -39,17 +37,16 @@
                         </li>
                     </ul>
                 }
-                <!-- Usuario no autenticado -->
-                else
+                else @*Usuario no auntenticado*@
                 {
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item me-3">
-                        <a class="btn btn-outline-light btn-sm px-4" asp-controller="User" asp-action="Login">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-success btn-sm px-4" asp-controller="User" asp-action="Register">Registrarse</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-3 dropstart">
+                            <a class="btn btn-outline-light btn-sm px-4" asp-controller="User" asp-action="Login">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item dropstart">
+                            <a class="btn btn-success btn-sm px-4" asp-controller="User" asp-action="Register">Registrarse</a>
+                        </li>
+                    </ul>
                 }
             </div>
         </nav>
@@ -57,11 +54,10 @@
 
 
     <!-- Contenido principal -->
-   
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
 
     <!--footer-->
     <footer class="bg-dark text-light text-center py-4">
