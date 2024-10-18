@@ -1,0 +1,13 @@
+# Ignorar carpetas de compilación
+/bin/
+/obj/
+/.vs/
+
+# Ignorar archivos binarios y temporales
+*.dll
+*.exe
+*.pdb
+*.cache
+*.suo
+*.csproj.nuget.*
+*.staticwebassets.*

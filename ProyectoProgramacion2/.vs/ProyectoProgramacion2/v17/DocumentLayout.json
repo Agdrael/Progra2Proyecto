@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\",
+  "WorkspaceRootPath": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\proyectoprogramacion2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|c:\\users\\carlos\\desktop\\asdasdasd\\proyectoprogramacion2\\proyectoprogramacion2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|solutionrelative:proyectoprogramacion2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|c:\\users\\carlos\\desktop\\asdasdasd\\proyectoprogramacion2\\proyectoprogramacion2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|solutionrelative:proyectoprogramacion2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\proyectoprogramacion2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|c:\\users\\carlos\\desktop\\asdasdasd\\proyectoprogramacion2\\proyectoprogramacion2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|solutionrelative:proyectoprogramacion2\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\proyectoprogramacion2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|c:\\users\\carlos\\desktop\\asdasdasd\\proyectoprogramacion2\\proyectoprogramacion2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|solutionrelative:proyectoprogramacion2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\proyectoprogramacion2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|c:\\users\\carlos\\desktop\\asdasdasd\\proyectoprogramacion2\\proyectoprogramacion2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F9819A50-8CF0-40C8-9AAC-FAED33A7CC5C}|ProyectoProgramacion2\\ProyectoProgramacion2.csproj|solutionrelative:proyectoprogramacion2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -26,59 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacion2\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ProyectoProgramacion2\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T03:07:21.202Z",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ProyectoProgramacion2\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ProyectoProgramacion2\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-18T07:39:48.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\appsettings.json",
-              "RelativeDocumentMoniker": "ProyectoProgramacion2\\appsettings.json",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\appsettings.json",
-              "RelativeToolTip": "ProyectoProgramacion2\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-13T03:18:43.672Z",
-              "EditorCaption": ""
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacion2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProyectoProgramacion2\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T03:07:21.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyectoProgramacion2\\appsettings.json",
+              "ToolTip": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\appsettings.json",
+              "RelativeToolTip": "ProyectoProgramacion2\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-13T03:18:43.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ProyectoProgramacion2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ProyectoProgramacion2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwDMAAABVAAAA",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwC4AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-13T03:00:42.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ProyectoProgramacion2\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\Programacion\\WebProgramming\\Progra2Proyecto\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Carlos\\Desktop\\asdasdasd\\ProyectoProgramacion2\\ProyectoProgramacion2\\Controllers\\UserController.cs",
               "RelativeToolTip": "ProyectoProgramacion2\\Controllers\\UserController.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAAAcwDwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T15:39:00.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T15:39:00.737Z"
             }
           ]
         }

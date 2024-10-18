@@ -1,8 +1,103 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Turismo El Salvador</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover El Salvador</h1>
+            <p>The Land of Volcanoes and Beaches</p>
+            <a href="#destinos" class="btn btn-custom btn-lg">Explore Now</a>
+        </div>
+    </section>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- Sección de destinos -->
+    <section id="destinos" class="destinos py-5">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="~/images/playa_random_el_salvador.jpg" class="card-img-top" alt="Surf City">
+                        <div class="card-body">
+                            <h5 class="card-title">Surf City</h5>
+                            <p class="card-text">Bienvenidos a Surf City El Salvador, el lugar de las mejores olas derechas del mundo.</p>
+                            <a href="#" class="btn btn-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="~/images/Cerro_verde.jpg" class="card-img-top" alt="Cerro Verde">
+                        <div class="card-body">
+                            <h5 class="card-title">Cerro Verde</h5>
+                            <p class="card-text">Cuntetepeque, es el nombre en náhuat del Cerro Verde y significa “Cerro de nubes o brumas”.</p>
+                            <a href="#" class="btn btn-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="~/images/lago_coatepeque.jpg" class="card-img-top" alt="Lago de Coatepeque">
+                        <div class="card-body">
+                            <h5 class="card-title">Lago de Coatepeque</h5>
+                            <p class="card-text">Un hermoso lago, para una aventura relajada.</p>
+                            <a href="#" class="btn btn-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Cultura y Gastronomía -->
+    <section id="cultura" class="cultura bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Cultura y Gastronomía</h2>
+            <div id="culturaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/images/pupusas.jpg" class="d-block w-100" alt="Pupusas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pupusas</h5>
+                            <p>El plato típico más querido por los salvadoreños.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/fiestas_agostinas.jpg" class="d-block w-100" alt="Fiestas Agostinas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fiestas Agostinas</h5>
+                            <p>Una celebración tradicional llena de color y música.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/ballet_folkloriko.jpg" class="d-block w-100" alt="Ballet Folklórico">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ballet Folklórico</h5>
+                            <p>Descubre la rica cultura del país a través de sus danzas tradicionales.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#culturaCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#culturaCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+  
+</body>
+</html>

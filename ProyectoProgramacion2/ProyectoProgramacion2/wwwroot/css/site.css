@@ -1,22 +1,140 @@
+/* Global Settings */
 html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+}
+
+main {
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  html {
+      font-size: 16px;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.05);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  
+}
+main {
+  padding-top: 100px; /* Espacio para compensar el header fijo */
+}
+
+/* Estilo de Botones */
+.btn-custom {
+  background-color: #258cfb;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-custom:hover {
+      background-color: #1b6dc7;
+  }
+
+/* Hero Seccion */
+.hero {
+  background-image: url('../images/finca_cristo_negro_los_cedros.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  width: 100%; /* Ocupa toda la anchura disponible */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+  /* Animaciones del hero */
+  .hero h1 {
+      font-size: 4rem;
+      animation: fadeInUp 1s ease-out;
+  }
+
+  .hero p {
+      font-size: 1.5rem;
+      animation: fadeInUp 1.5s ease-out;
+  }
+
+  .hero .btn {
+      margin-top: 20px;
+      animation: fadeInUp 2s ease-out;
+  }
+/* Destinos Seccion */
+.destinos {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+  .destinos h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #258cfb;
+      animation: fadeInUp 1s ease-out;
+  }
+
+.card {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+  .card:hover {
+      animation: pulse 0.5s ease-in-out;
+  }
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+      color: #258cfb;
 }
